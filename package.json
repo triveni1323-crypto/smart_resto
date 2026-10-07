@@ -1,0 +1,30 @@
+{
+  "name": "smart_resto",
+  "version": "0.1.0",
+  "description": "Smart restaurant management platform",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "scripts": {
+    "dev": "pnpm -r --parallel run dev",
+    "build": "pnpm -r run build",
+    "start": "cd packages/backend && pnpm start",
+    "lint": "pnpm -r run lint",
+    "type-check": "pnpm -r run type-check",
+    "format": "prettier --write \"packages/**/*.{ts,tsx,json,md}\"",
+    "db:setup": "cd packages/backend && pnpm run db:setup",
+    "db:migrate": "cd packages/backend && pnpm run db:migrate"
+  },
+  "keywords": [
+    "restaurant",
+    "management",
+    "pos",
+    "ordering",
+    "inventory"
+  ],
+  "author": "Triveni",
+  "license": "MIT"
+}
